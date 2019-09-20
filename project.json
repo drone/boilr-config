@@ -1,0 +1,5 @@
+{
+    "DockerRepository": "foo/bar",
+    "GoModule": "github.com/foo/bar",
+    "Description": ""
+}

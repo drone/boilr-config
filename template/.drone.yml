@@ -1,0 +1,20 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: build
+  image: golang
+  commands:
+  - go build
+  - go test ./...
+
+- name: publish
+  image: plugins/docker
+  settings:
+    auto_tag: true
+    repo: {{DockerRepository}}
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
