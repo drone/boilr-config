@@ -22,5 +22,5 @@ enter the docker registry name for this project:
 enter the go module name:
 
 ```text
-[?] Please choose a value for "GoModule" [default: "github.com/foo/bar":
+[?] Please choose a value for "GoModule" [default: "github.com/foo/bar"]:
 ```
